@@ -1,0 +1,9 @@
+---
+   - name: create files.
+     hosts: Slave1
+     no_log: True
+     vars:
+       var: welcome
+     tasks:
+       - name: touch {{ var }}
+         shell: touch /root/{{ var }} 
