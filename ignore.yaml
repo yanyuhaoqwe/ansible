@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: 不计算这是一个失败。
+      shell: /bin/false
+      ignore_errors: yes
