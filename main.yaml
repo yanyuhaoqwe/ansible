@@ -1,6 +1,6 @@
 ---
    - name: create files.
-     hosts: Slave1
+     hosts: localhost
      no_log: True
      vars:
        var: welcome
